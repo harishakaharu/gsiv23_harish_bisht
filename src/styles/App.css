@@ -1,0 +1,18 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+}
+.buttons button{
+    height: 60px;
+    width: 100px;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #9B9B9B;;
+    color: white;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,40 @@
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+.NavInput {
+  display: flex;
+  align-items: center;
+  background-color: #d8d8d8;
+  border-radius: 5px;
+  margin: 5px 10px 5px 10px;
+  width: 600px;
+  height: 40px;
+}
+.NavInput input {
+  border: none;
+  background-color: #d8d8d8;
+  width: 502px;
+  height: 23px;
+  color: #9b9b9b;
+  font-family: Roboto;
+  font-size: 20px;
+}
+.navBtn {
+  background-color: #d8d8d8;
+  border: none;
+}
+.navHomeBtn {
+  border: none;
+  background-color: transparent;
+}
+.searchBtn,
+.homeBtn {
+  width: 24px;
+  height: 24px;
+  margin: 0px 5px 0px 5px;
+}
