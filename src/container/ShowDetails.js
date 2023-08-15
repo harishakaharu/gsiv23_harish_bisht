@@ -49,7 +49,7 @@ export default function ShowDetails() {
     };
     fetchData();
     fetchData2();
-  }, [movieId]);
+  }, [movieId,options]);
   return (
     <div>
       <div className="detailsTitle">
