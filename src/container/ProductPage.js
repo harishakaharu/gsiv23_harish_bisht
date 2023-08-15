@@ -47,7 +47,7 @@ export default function ProductPage() {
         .catch((err) => console.error(err));
     };
     fetchData();
-  }, [pages, dispatch]);
+  }, [pages, dispatch,options]);
   return (
     <div>
       <NavBar />
