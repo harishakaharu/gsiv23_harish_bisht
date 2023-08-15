@@ -4,15 +4,16 @@ import "../styles/ShowDetails.css";
 import { AiFillHome } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import LoadingSpinner from "./LoadingSpinner";
-const options = {
-  method: "GET",
-  headers: {
-    accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZWE4ZmYxNjFiOTZiMDU1YzIwZDI5Mzc3Mjc1NGI5NCIsInN1YiI6IjY0ZGFmYTBlMzcxMDk3MDEzOTQ2MzVlMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hwM1zKVz35H4HmJYcrlsTNRcPhIEZt7uZwNjbd1r9qE",
-  },
-};
+
 export default function ShowDetails() {
+  const options = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+      Authorization:
+        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZWE4ZmYxNjFiOTZiMDU1YzIwZDI5Mzc3Mjc1NGI5NCIsInN1YiI6IjY0ZGFmYTBlMzcxMDk3MDEzOTQ2MzVlMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hwM1zKVz35H4HmJYcrlsTNRcPhIEZt7uZwNjbd1r9qE",
+    },
+  };
   const movieId = useSelector((state) => state.selectedID);
   const [selected, setSelected] = useState({});
   const [cast, setCast] = useState({});
