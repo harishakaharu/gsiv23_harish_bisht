@@ -5,16 +5,15 @@ import ProductList from "../container/ProductList";
 import { moviesAction } from "../store/movieSlice";
 import { useDispatch } from "react-redux";
 import LoadingSpinner from "./LoadingSpinner";
-
+const options = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZWE4ZmYxNjFiOTZiMDU1YzIwZDI5Mzc3Mjc1NGI5NCIsInN1YiI6IjY0ZGFmYTBlMzcxMDk3MDEzOTQ2MzVlMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hwM1zKVz35H4HmJYcrlsTNRcPhIEZt7uZwNjbd1r9qE",
+  },
+};
 export default function ProductPage() {
-  const options = {
-    method: "GET",
-    headers: {
-      accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3ZWE4ZmYxNjFiOTZiMDU1YzIwZDI5Mzc3Mjc1NGI5NCIsInN1YiI6IjY0ZGFmYTBlMzcxMDk3MDEzOTQ2MzVlMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hwM1zKVz35H4HmJYcrlsTNRcPhIEZt7uZwNjbd1r9qE",
-    },
-  };
   const [pages, setPages] = useState(1);
   const [flag, setFlag] = useState(false);
   const prevHandler = () => {
@@ -47,7 +46,7 @@ export default function ProductPage() {
         .catch((err) => console.error(err));
     };
     fetchData();
-  }, [pages, dispatch,options]);
+  }, [pages, dispatch]);
   return (
     <div>
       <NavBar />
