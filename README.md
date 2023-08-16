@@ -30,7 +30,7 @@ Renders the paginated list of movies.
 Renders the "Next" and "Previous" buttons for navigating the movies list.
 
 
-### As It has env variable for auth key, key use your keys for URL authentication
+### As It has env variable for auth key, Please use your keys for URL authentication
 
 
 
