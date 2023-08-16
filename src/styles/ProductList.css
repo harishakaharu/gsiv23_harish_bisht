@@ -18,6 +18,11 @@
   height: 200px;
   background-color: #d8d8d8;
 }
+.item_container_img img{
+  width: 200px;
+  height: 200px;
+  background-color: #d8d8d8;
+}
 .item_container_details {
   display: flex;
   justify-content: space-between;

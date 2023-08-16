@@ -59,7 +59,7 @@ export default function ShowDetails() {
       {flag ? (
         <div className="details_content">
           <div className="details_content_img">
-            <img src={selected.poster_path} alt={selected.original_title} />
+            <img src={`https://image.tmdb.org/t/p/original/${selected.poster_path}`} alt={selected.original_title} />
           </div>
           <div className="details_content_details">
             <p className="details_content_details_title">
