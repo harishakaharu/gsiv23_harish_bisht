@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# First Page :
+## Overview
+This document provides an overview of the "Movie Page" component, which displays a navigation bar with search functionality, a list of videos, and pagination buttons.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
+# Navigation Bar:
 
-## Available Scripts
+Contains a search input field.
+Includes a "Home" link to return to the homepage(Refresh).
 
-In the project directory, you can run:
+# Movie List:
 
-### `npm start`
+Displays a paginated list of videos.
+Each video item includes a  image,title,rating and overview.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Pagination Buttons:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Provides "Next" and "Prev" buttons for navigating through the movie list.
 
-### `npm test`
+# Components
+The Video Page consists of the following components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## NavBar: 
+Displays the navigation bar with search input and "Home" link.
 
-### `npm run build`
+## VideoList: 
+Renders the paginated list of movies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Pagination: 
+Renders the "Next" and "Previous" buttons for navigating the movies list.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Second Page :
+## Overview
+When you click on the title area of any movie card you will be redirected to movie details page, which displays movie details and includes a home button for navigation.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Features
+# Home Button:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Allows users to navigate back to the homepage.
+# Movie Details:
 
-## Learn More
+Displays detailed information about a selected movie, such as title, poster, description, Year, Cast, Director, etc.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Components
+The Movie Details Page consists of the following components:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## HomeButton: 
+Displays the home button for navigating back to the homepage.
 
-### Code Splitting
+## MovieDetails: 
+Renders detailed information about the selected movie.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+# Technologies Used
+React.js: Frontend library for building user interfaces.
+CSS: Styling the web page.
+State Management : Redux, Redux toolkit, persist redux
+Routing : React Router
+enviornment variable : for authentication key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Installation
+## Clone the repository:
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+git clone 
+https://github.com/harishakaharu/gsiv23_harish_bisht
 
-### Deployment
+Navigate to the project directory:
+cd your-repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Install dependencies:
+npm install
 
-### `npm run build` fails to minify
+Usage
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
