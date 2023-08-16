@@ -23,7 +23,7 @@ The Video Page consists of the following components:
 ## NavBar: 
 Displays the navigation bar with search input and "Home" link.
 
-## VideoList: 
+## MovieList: 
 Renders the paginated list of movies.
 
 ## Pagination: 
