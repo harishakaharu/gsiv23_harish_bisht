@@ -12,7 +12,36 @@
     padding: 10px 10px 10px 10px;
     align-items: center;
     border-radius: 10px;
-    background-color: #9B9B9B;;
+    background-color: #9B9B9B;
     color: white;
     border: 1px solid #ccc;
+    cursor: pointer;
+}
+.buttons button:hover{
+    height: 65px;
+    width: 105px;
+    background-color: #757575;
+    color: white;
+    transition: width ease-in 0.1s;
+}
+
+@media (max-width: 900px){
+    .buttons button{
+        height: 30px;
+        width: 50px;
+        padding: 5px 5px 5px 5px;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #9B9B9B;
+        color: white;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    .buttons button:hover{
+        height: 35px;
+        width: 55px;
+        background-color: #757575;
+        color: white;
+        transition: width ease-in 0.1s;
+    }
 }

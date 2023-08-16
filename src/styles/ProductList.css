@@ -23,12 +23,17 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  cursor: pointer;
+}
+.item_container_details h4:hover,.item_container_details p:hover{
+  font-size: 14px;
+  color: #2e2d2d;
+  transition: font-size ease-in 0.1s;
 }
 .item_container_details h4 {
   font-size: 12px;
   margin: 0px;
   color: #4a4a4a;
-  cursor: pointer;
 }
 .item_container_details p {
   font-size: 12px;
@@ -39,4 +44,47 @@
   font-size: 12px;
   margin: 0px;
   color: #4a4a4a;
+}
+@media (max-width: 600px) and (max-height: 1000px){
+  .product_container {
+    margin: 2px 4px 2px 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    font-family: Roboto;
+  }
+  .item_container {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100px;
+    height: 132px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  .item_container_img {
+    width: 100px;
+    height: 100px;
+    background-color: #d8d8d8;
+  }
+  /**/
+  .item_container_details h4:hover,.item_container_details p:hover{
+    font-size: 7px;
+    color: #2e2d2d;
+    transition: font-size ease-in 0.1s;
+  }
+  .item_container_details h4 {
+    font-size: 6px;
+    margin: 0px;
+    color: #4a4a4a;
+  }
+  .item_container_details p {
+    font-size: 6px;
+    color: #9b9b9b;
+  }
+  
+  .item_container_desc p {
+    font-size: 6px;
+    margin: 0px;
+    color: #4a4a4a;
+  }
 }

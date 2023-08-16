@@ -30,11 +30,56 @@
 }
 .navHomeBtn {
   border: none;
-  background-color: transparent;
+  background-color: none;
+  text-decoration-color: none;
+  color:#9b9b9b;
 }
 .searchBtn,
 .homeBtn {
   width: 24px;
   height: 24px;
   margin: 0px 5px 0px 5px;
+  cursor: pointer;
+}
+.searchBtn:hover,
+.homeBtn:hover{
+  width: 26px;
+  height: 26px;
+  color: #949494;
+  transition: width ease-in 0.1s;
+}
+
+@media (max-width: 900px){
+  .NavInput {
+    display: flex;
+    align-items: center;
+    background-color: #d8d8d8;
+    border-radius: 2px;
+    margin: 2px 4px 2px 4px;
+    width: 200px;
+    height: 17px;
+  }
+  .NavInput input {
+    border: none;
+    background-color: #d8d8d8;
+    width: 170px;
+    height: 11px;
+    color: #9b9b9b;
+    font-family: Roboto;
+    font-size:10px;
+  }
+  .searchBtn,
+.homeBtn {
+  width: 8px;
+  height: 8px;
+  margin: 0px 2px 0px 2px;
+  cursor: pointer;
+}
+.searchBtn:hover,
+.homeBtn:hover{
+  width: 10px;
+  height: 10px;
+  color: #949494;
+  transition: width ease-in 0.1s;
+}
 }
