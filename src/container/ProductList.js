@@ -15,7 +15,7 @@ export default function ProductList() {
       {list.map((data) => (
         <div key={data.id} className="item_container">
           <div to="/productDetails" className="item_container_img">
-            <img src={data.backdrop_path} alt={data.original_title} />
+            <img src={`https://image.tmdb.org/t/p/original/${data.poster_path}`} alt={data.original_title} />
           </div>
           <Link
             to="/productDetails"
